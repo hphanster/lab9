@@ -1,0 +1,47 @@
+@viewport {
+    width: extend-to-zoom 750px;
+    min-zoom: 0.15;
+    max-zoom: 3;
+}
+
+
+@media screen and (min-width: 350px) and (orientation: landscape) {
+    div {
+        background-color:chocolate;
+        font-size: larger;
+    }
+}
+
+@media screen and (min-width: 400px) and (orientation: portrait) {
+    div {
+        display: grid;
+        background-color:rgb(182, 70, 35);
+        font-size: larger;
+        grid-template-columns: 2fr 1fr;
+        margin: auto;
+        padding: auto;
+    }
+    article {
+        margin-bottom: auto;
+        margin-top: auto;
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 500px) and (orientation: portrait) {
+    div {
+        background-color:rgb(187, 107, 42);
+        font-size: medium;
+    }
+
+}
+
+body {
+    width: 70%;
+    margin: auto;
+    font: 1em;
+}
+
+p:hover {
+color: cyan;
+}
